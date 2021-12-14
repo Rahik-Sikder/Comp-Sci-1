@@ -1,0 +1,34 @@
+H:\Comp Sci 1\Unit 3\SentinelValues.java
+
+import java.util.Scanner;
+
+public class SentinelValues {
+    public static void main (String args[]){
+        Scanner reader = new Scanner(System.in);
+        
+        // A sentinel value is a value entered by a user to end a loop
+        
+        // Ask the user for any number of grades
+        // User will enter -1 to end the loop and view sum and avg 
+        
+        int input = 0;
+        int sum = 1;
+        double avg = 0;
+        int counter = -1;
+        
+        System.out.println("Enter any number of grades, type -1 to view sum and avg");
+        
+        while(input != -1){
+            System.out.print("Enter a grade: ");
+            input = reader.nextInt();
+            
+            sum += input;
+            counter++;
+        }
+       
+        avg = (double) sum / counter;
+        System.out.println("Sum: " + sum + "\nAvg: " + avg);
+        
+    
+    }
+}

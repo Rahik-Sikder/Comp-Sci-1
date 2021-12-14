@@ -1,0 +1,17 @@
+#BlueJ class context
+comment0.target=Card
+comment1.params=
+comment1.target=Card()
+comment1.text=\ default\ constructor\r\n\ This\ constructor\ should\ assign\ a\ random\ value\ [2-11]\ to\ value.\r\n\ Initialize\ cardFace\ with\ the\ value\ +\ the\ call\ from\ helper\ method\ makeCardSuit()\r\n\ \r\n\ made\ it\ make\ values\ from\ [1-13]\ \r\n
+comment2.params=aceValOne
+comment2.target=Card(boolean)
+comment3.params=
+comment3.target=int\ aceValue()
+comment4.params=
+comment4.target=java.lang.String\ makeCardSuit()
+comment4.text=\ makeCardSuit()\r\n\ This\ method\ returns\ a\ random\ suit\ string\ for\ the\ card\ face.\ \r\n\ Make\ a\ random\ number\ [1-4]\ and\ return\ either\ "H",\ "D",\ "C",\ "S"\ or\ the\ unicode\ values\ below\r\n\ Heart\ char\ \ \ \ \ \ ""+'\u2665'\r\n\ Diamond\ char\ \ \ \ ""+'\u2666'\r\n\ Club\ char\ \ \ \ \ \ \ ""\ +'\u2663'\r\n\ Spade\ char\ \ \ \ \ \ ""\ +'\u2660'\ \ \ \ \r\n
+comment5.params=
+comment5.target=int\ getValue()
+comment6.params=
+comment6.target=java.lang.String\ getCardFace()
+numComments=7

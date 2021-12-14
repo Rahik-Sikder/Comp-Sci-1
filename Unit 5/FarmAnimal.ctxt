@@ -1,0 +1,19 @@
+#BlueJ class context
+comment0.target=FarmAnimal
+comment1.params=
+comment1.target=FarmAnimal()
+comment2.params=farmer\ cows\ horses\ pigs\ chickens
+comment2.target=FarmAnimal(java.lang.String,\ int,\ int,\ int,\ int)
+comment3.params=
+comment3.target=java.lang.String\ getFarmer()
+comment4.params=
+comment4.target=int\ getCows()
+comment5.params=
+comment5.target=int\ getHorses()
+comment6.params=
+comment6.target=int\ getPigs()
+comment7.params=
+comment7.target=int\ getChickens()
+comment8.params=
+comment8.target=java.lang.String\ toString()
+numComments=9

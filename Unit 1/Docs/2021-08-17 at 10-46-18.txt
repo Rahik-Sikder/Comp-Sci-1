@@ -1,0 +1,24 @@
+C:\Users\sr10081753\Desktop\Comp Sci 1\Unit 1\VariablesExample.java
+
+public class VariablesExample {
+    public static void main(String[] args){
+        
+        // 1. Declaring the variable
+        
+        int num;
+        // int is the type of variable
+        // num is the variable name
+        
+        // 2. initializing the variable (storing a value)
+        
+        num = 10;
+        
+        System.out.println(num);
+        
+        int anotherVar = 9;
+        
+        System.out.println(anotherVar);
+        
+        
+    }
+}

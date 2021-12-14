@@ -1,0 +1,11 @@
+C:\Users\sr10081753\Desktop\Comp Sci 1\Unit 1\Printing.java
+
+public class Printing {
+    public static void main(String[] args){
+        
+        System.out.print("this is a print...");
+        System.out.println("hi!");
+        
+        
+    }
+}

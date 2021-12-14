@@ -1,0 +1,14 @@
+H:\Comp Sci 1\Unit 2\Arcronym.java
+
+import java.util.Scanner;
+
+public class Arcronym {
+    public static void main (String args[]){
+    
+        Scanner reader = new Scanner(System.in);
+        System.out.print("Enter a three letter word --> ");
+        String input = reader.next();
+        
+    
+    }
+}

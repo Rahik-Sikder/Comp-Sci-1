@@ -1,0 +1,8 @@
+#BlueJ class context
+comment0.target=Tree
+comment1.params=gc\ x\ y
+comment1.target=Tree(javafx.scene.canvas.GraphicsContext,\ int,\ int)
+comment2.params=
+comment2.target=void\ drawTrunk()
+comment2.text=\ drawTrunk()\r\n\ This\ method\ draws\ the\ brown\ trunk\ of\ the\ tree.\ See\ the\ instructions\ for\ details.\r\n
+numComments=3

@@ -1,0 +1,44 @@
+H:\Comp Sci 1\Unit 4\StarsAndStripes.java
+
+public class StarsAndStripes{
+   private void printTwentyStars(){
+       System.out.println("********************");
+   }
+
+   private void printTwentyDashes(){
+       System.out.println("--------------------");
+   }
+
+   public void printTwoBlankLines(){
+       System.out.println();
+       System.out.println();
+   }
+
+   public void printASmallBox(){
+        printTwentyDashes(); // --
+        printTwentyStars();  // **
+        printTwentyDashes(); // --
+        printTwentyStars();  // **
+        printTwentyDashes(); // --
+        printTwentyStars();  // **
+        printTwentyDashes(); // --
+   }
+
+   public void printABigBox(){
+       printASmallBox();
+       printASmallBox();
+   }
+}
+H:\Comp Sci 1\Unit 4\StarsRunner.java
+
+public class StarsRunner{
+   public static void main(String args[]){
+      StarsAndStripes test = new StarsAndStripes();
+      System.out.println("Stars and Stripes");
+      test.printTwoBlankLines();
+      test.printASmallBox();
+      test.printTwoBlankLines();
+      test.printABigBox();
+      test.printTwoBlankLines();
+   }
+}

@@ -1,0 +1,22 @@
+C:\Users\sr10081753\Desktop\Comp Sci 1\Unit 1\Operators.java
+
+public class Operators{
+    public static void main (String args[]){
+    
+    int num1 = 25;
+    int num2 = 10;
+    int result = 0;
+    
+    result = num1 + num2;
+    
+    System.out.println(num1 + " + " + num2 + " = " + result);
+    
+    // Integer division
+    
+    result = num2 / num1;
+    
+    System.out.println( 100 / result);
+    
+    }
+
+}

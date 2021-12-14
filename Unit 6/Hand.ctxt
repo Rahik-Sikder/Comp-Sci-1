@@ -1,0 +1,11 @@
+#BlueJ class context
+comment0.target=Hand
+comment1.params=gc\ time
+comment1.target=Hand(javafx.scene.canvas.GraphicsContext,\ int)
+comment2.params=gc\ time
+comment2.target=void\ drawHand(javafx.scene.canvas.GraphicsContext,\ int)
+comment3.params=time
+comment3.target=int\ findX(int)
+comment4.params=time
+comment4.target=int\ findY(int)
+numComments=5

@@ -1,0 +1,81 @@
+H:\Comp Sci 1\Unit 6\CombinationLockTest.java
+
+import java.util.Scanner;
+
+
+public class CombinationLockTest {
+
+  public static void main(String[] args) {
+    CombinationLock myLock = new CombinationLock("11-22-33");
+    System.out.println("The current combination is " + myLock.getCombination());
+    System.out.println();
+    myLock.open();
+    System.out.println(myLock);
+    myLock.close();
+
+    System.out.println();
+    System.out.println("Change combination to 55-66-77");
+    System.out.print("Type new combination -->");
+    Scanner keyboard = new Scanner(System.in);
+    String combo = keyboard.nextLine();
+    myLock.setCombination(combo);
+    System.out.println("Combination has been changed.");
+    System.out.println();
+
+    myLock.open();
+    System.out.println(myLock);
+    myLock.close();
+
+    System.out.println();
+    System.out.println("Type an incorrect combination.");
+
+    myLock.open();
+    System.out.println(myLock);
+    myLock.close();
+  }
+}
+H:\Comp Sci 1\Unit 6\CombinationLock.java
+
+import java.util.*;
+
+public class CombinationLock extends Lock{
+    
+    private String combination;
+    Scanner reader = new Scanner(System.in);
+    
+    public CombinationLock(){
+        super(); // call the default constructor of the Lock class
+        combination = "";
+    }
+    
+    public CombinationLock(String combo){
+        super();
+        combination = combo;
+    }
+    
+    @Override
+    public void open(){
+        System.out.print("Enter Combination --> ");
+        String combo = reader.nextLine();
+        if(combination.equals(combo)){
+            super.open();
+        }
+        
+    }
+    
+    public String toString() {
+        String str = super.toString() + "\n" +
+        "Combination = " + combination + "\n";
+        return str;
+    }
+    
+    public void setCombination(String combo){
+        combination = combo;
+    }
+    
+    public String getCombination(){
+        return combination;
+    }
+    
+
+}

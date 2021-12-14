@@ -1,0 +1,22 @@
+H:\Comp Sci 1\Unit 3\RelationalOperators.java
+
+public class RelationalOperators {
+    public static void main (String args[]) {
+        
+        // These operators are used to test the relationship between two values
+        // they return either true or false
+        
+        // ALL MY HOMIES HATE ANNOUCEMENTS
+        
+        // 1. equality operator ( == ) - this checks if two values are the same
+        // returns true if same.
+        
+        int num1 = 10;
+        int num2 = 9;
+        
+        System.out.println(num1 = num2); // false
+        
+        // 2. 
+    
+    }
+}

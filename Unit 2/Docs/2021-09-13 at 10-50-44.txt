@@ -1,0 +1,18 @@
+H:\Comp Sci 1\Unit 2\Length.java
+
+public class Length {
+    public static void main (String args[]) {
+    
+        /* length()
+         * returns the number of chars in a string
+         * input: n/a
+         * output: int
+         */
+        
+        String word = "tacocat";
+        
+        int num = word.length();
+        
+    
+    }
+}

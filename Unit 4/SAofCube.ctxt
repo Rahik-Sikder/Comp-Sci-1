@@ -1,0 +1,9 @@
+#BlueJ class context
+comment0.target=SAofCube
+comment1.params=args
+comment1.target=void\ main(java.lang.String[])
+comment2.params=side
+comment2.target=void\ saVoid(int)
+comment3.params=side
+comment3.target=int\ saReturn(int)
+numComments=4

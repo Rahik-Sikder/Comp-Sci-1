@@ -1,0 +1,48 @@
+H:\Comp Sci 1\Unit 3\WhileLoop.java
+
+import java.util.Scanner;
+
+public class WhileLoop {
+    public static void main (String args[]){
+    
+        Scanner reader = new Scanner(System.in);
+        
+        int i = 0;
+        
+        while(i < 10){
+            System.out.print(i + " ");
+            i++;
+        }
+        
+        
+        // 0-50
+        
+        
+        while(i <= 20){
+             System.out.print(i + " ");
+            i++;
+        }
+        
+        
+        System.out.println();
+        
+        // while loops are useful when we don't know how many iterations we need
+        
+        String input = "";
+        String password = "password";
+        
+        System.out.println("Enter your password");
+        input = reader.nextLine();
+        
+        while(!input.equals(password)){ // while iinput is not password keep looping
+            System.out.println("Wrong password, try again");
+            input = reader.nextLine();
+        
+        }
+        
+        System.out.print("Login Succesful");
+        
+        
+        
+    }
+}

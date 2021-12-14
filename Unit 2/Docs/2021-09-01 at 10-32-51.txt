@@ -1,0 +1,15 @@
+H:\Comp Sci 1\Unit 2\SeventhGradeMathMethods.java
+
+public class SeventhGradeMathMethods {
+     public static void main (String args[]){
+     
+     // Math.sqrt(a)
+     // Returns the square root of a
+     // input: double
+     // output: double
+     
+     System.out.println("The sqrt of 70 is: " + Math.sqrt(70));
+         
+        
+     }
+}

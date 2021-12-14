@@ -1,0 +1,13 @@
+#BlueJ class context
+comment0.target=Quadratic
+comment1.params=
+comment1.target=Quadratic()
+comment2.params=quadA\ quadB\ quadC
+comment2.target=Quadratic(int,\ int,\ int)
+comment3.params=quadA\ quadB\ quadC
+comment3.target=void\ setEquation(int,\ int,\ int)
+comment4.params=
+comment4.target=void\ calcRoots()
+comment5.params=
+comment5.target=void\ print()
+numComments=6

@@ -1,0 +1,50 @@
+H:\Comp Sci 1\Unit 2\RussianRoulette.java
+
+import java.util.Scanner;
+
+public class RussianRoulette{
+    public static void main (String args[]){
+    
+        Scanner reader = new Scanner(System.in);
+        
+        // the menu
+        System.out.print("Do you want to play? y/n");
+        
+        String input = reader.nextLine();
+        
+        boolean[] revolver = new boolean[6];
+        boolean death = false;
+        int loaded;
+        int thePull;
+        
+        if(input.equalsIgnoreCase("y") || input.equalsIgnoreCase("yes")){
+            // reload the revolver 
+            
+            loaded = (int) (Math.random() * 6);
+            revolver[loaded] = true;
+            
+            
+            while(!death){
+                System.out.print("try your luck...");
+                reader.nextLine();
+                
+                try{
+                    Thread.sleep(1000);
+                } catch(InterruptedException e){
+                    
+                }
+
+                thePull = (int) (Math.random() * 6);
+                death = revolver[thePull];
+             
+            }
+            
+            System.out.println("Boom");
+        } else {
+            System.exit(0);
+        }
+        
+        
+    }   
+    
+}

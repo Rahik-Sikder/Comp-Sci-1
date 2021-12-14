@@ -1,0 +1,134 @@
+H:\Comp Sci 1\Unit 4\Methods.java
+
+import java.util.*;
+
+public class Methods
+{
+    /** @return the square of num
+     *  @param num the number to be squared
+     */
+    //  square Method
+        
+    public int square(int num){
+        return num * num;
+    }
+
+    /** @return the sum of num1, num2, and num3
+     *  @param num1 first number in the sum
+     *  @param num2 second number in the sum
+     *  @param num3 third number in the sum
+     */
+    //  sumThree Method
+    
+    public int sumThree(int num1, int num2, int num3){
+        return num1 + num2 + num3;
+    }
+
+
+    /** @return the average of num1 and num2
+     *  @param num1 first number in average
+     *  @param num2 second number in average
+     */
+    //  average Method
+    
+    public double average(double num1, double num2){
+        return (num1 + num2) / 2;
+    }
+
+
+    /** @return the smaller value between num1 and num2
+     *  @param num1 first number in minimum comparison
+     *  @param num2 second number in minimum comparison
+     */
+    //  smaller Method
+
+
+
+    /** @return an integer random number in the range of [1..range] inclusive
+     *  @param range the upper bounds of generated random number
+     */
+    //  randomInt Method
+
+
+
+    /** Determines if num is odd or even. If num is even returns the string "even";
+     *  otherwise it returns the string "odd"
+     *  @return the string "even" or the string "odd"
+     *  @param num number used in comparison
+     */
+    //  evenOdd Method
+
+
+
+    /** Determines the letter grade for grade
+     *  @return a string value of "A", "B", "C", or "F"
+     *  @param grade the grade that needs to be converted into a letter grade
+     */
+    //  getLetterGrade Method
+
+
+
+    /** Prints the parameter name followed by the phrase
+     *  " have a nice day!"
+     *  @param name the name to be displayed
+     */
+    //  greeting Method
+
+
+
+    /** @return the first letter from parameter str
+     *  @param str string used to extract first letter from
+     */
+    // firstLetter Method
+
+
+
+    /** @return the last letter from parameter str
+     *  @param str string used to extract last letter from
+     */
+    //  lastLetter Method
+
+
+
+    /** @return a substring of str that has first letter removed
+     *  @param str string used to extract first letter from
+     */
+    //  removeFirst Method
+
+
+
+    /** @return a substring of str that has last letter removed
+     *  @param str string used to extract last letter from
+     */
+    //  removeLast Method
+
+
+
+    /** @return a string with str1, str2, and str3 merged together
+     *  @param str1 first string to be merged
+     *  @param str2 second string to be merged
+     *  @param str3 third string to be merged
+     */
+    //  merge Method
+
+
+
+
+    /** @return a string that is the first letter of parameter
+     *   str repeated three times.
+     *  @param str string used to extract first letter from
+     */
+    //  repeatFirst Method
+
+
+
+    /** @return a string that is the last letter of parameter
+     *   str repeated three times.
+     *  @param str string used to extract last letter from
+     */
+    //  repeatLast Method
+
+
+
+
+}

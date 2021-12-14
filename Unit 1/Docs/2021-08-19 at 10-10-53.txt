@@ -1,0 +1,13 @@
+C:\Users\sr10081753\Desktop\Comp Sci 1\Unit 1\CharVariables.java
+
+public class CharVariables{
+    public static void main (String args[]){
+    
+    // The char datatype stores a single ASCII characters
+    
+    char let1 = 'A';
+    
+    System.out.println(let1);
+    
+    }
+}

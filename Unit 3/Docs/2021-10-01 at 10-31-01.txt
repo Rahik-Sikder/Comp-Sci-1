@@ -1,0 +1,16 @@
+H:\Comp Sci 1\Unit 3\Table.java
+
+import java.util.Scanner;
+
+public class Table {
+    public static void main (String args[]){
+        Scanner reader = new Scanner(System.in);
+        
+        System.out.print("Enter table length --> ");
+        int table = reader.nextInt();
+        
+        System.out.println("\tN \t10*N \t100*N \t*N");
+        System.out.println("--------------------------------");
+    
+    }
+}

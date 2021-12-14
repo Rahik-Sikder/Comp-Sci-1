@@ -1,0 +1,81 @@
+H:\Comp Sci 1\Unit 2\RussianRoulette.java
+
+import java.util.Scanner;
+
+public class RussianRoulette{
+    public static void main (String args[]){
+    
+        Scanner reader = new Scanner(System.in);
+        
+        // the menu
+        System.out.println("\nRussian Roulette");
+        System.out.println("=================");
+        
+        
+        while (true){
+        System.out.println("Do you want to play? y/n");
+        String input = reader.nextLine();
+        if(input.equalsIgnoreCase("y") || input.equalsIgnoreCase("yes")){
+            runGame(reader);
+        } else {
+        break;
+        }
+    }
+       
+        
+        
+    } 
+    
+    
+    public static void runGame(Scanner reader){
+        
+        
+        
+        boolean[] revolver = new boolean[6];
+        boolean death = false;
+        int loaded;
+        int thePull;
+   
+       
+        // reload the revolver 
+        
+        loaded = (int) (Math.random() * 6);
+        revolver[loaded] = true;
+        
+        
+        while(death == false){
+            System.out.println(safeVoiceLine() + " press any key...");
+            reader.nextLine();
+            
+            try{
+                Thread.sleep(1000);
+            } catch(InterruptedException e){
+                
+            }
+
+            thePull = (int) (Math.random() * 6);
+            death = revolver[thePull];
+            
+            if(death == false) {
+                System.out.println("*click*");
+            }
+         
+        }
+        
+        System.out.println("Boom");
+
+    }   
+    
+    public static String safeVoiceLine(){
+    
+        String[] voiceLines = new String[4];
+        voiceLines[0] = "try your luck...";
+        voiceLines[1] = "you've survived for now...";
+        voiceLines[2] = "congrats, you got lucky...";
+        voiceLines[3] = "you live to see another day...";
+        
+        return voiceLines[(int) (Math.random() * 4)];
+    }
+    
+    
+}

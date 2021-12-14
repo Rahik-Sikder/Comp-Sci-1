@@ -1,0 +1,119 @@
+H:\Comp Sci 1\Unit 5\BlackJack.java
+
+import java.util.Scanner;
+public class BlackJack{
+    public static void main(String args[]) {
+        Scanner key = new Scanner(System.in);
+        System.out.println("Welcome to blackjack!");
+        
+        //1. Ask user for name. 
+        System.out.print("Enter your name: ");
+        String name = key.nextLine();
+        
+        
+        //2. Create a Hand object named player.
+        
+        Hand player = new Hand(name);
+        
+        
+        System.out.println("\nYour hand: " );
+        //This loop run while player is not bust and player does not stay
+        while(!player.getBust() && !player.getStay()){ 
+            
+            //3. Invoke the toString method to see the players hand.
+            System.out.println("\n" + player);
+            
+            //4.Prompt the user with a menu of choices to hit (1) or stay(1)
+            
+            System.out.println("\nMenu:");
+            System.out.println("1. Hit ");
+            System.out.println("2. Stay ");
+            System.out.println("Enter choice: ");
+            int menu = key.nextInt();
+            
+            
+            /*5. Use an if else to call player.hit("7H", 7) when the user enters 1. 
+            *    When the user enters 2 call stay()
+            * note: in the 80pt version the only card is 7 of hearts. Use the parameters in the comment above.
+            */
+            
+            if (menu == 1){
+                Card card = new Card();
+                player.hit(card.getCardFace(), card.getValue());
+            } else {
+                player.stay();
+            }
+            
+           
+            
+        }
+        
+        
+        //6. Print out the players handTotal()
+        
+        System.out.println("\nYour Total: " + player.getHandTotal());
+        
+        //7. Print message with win or lose message. If players total is > 21 they lose. 
+        if(player.getHandTotal() > 21){
+            System.out.println("Bust! You lose.");
+        } else {
+            System.out.println("You win!");
+        }
+        
+        
+    }
+}
+H:\Comp Sci 1\Unit 5\Card.java
+
+public class Card {
+    private int value;
+    private String cardFace;
+    
+    /** default constructor
+     * This constructor should assign a random value [2-11] to value.
+     * Initialize cardFace with the value + the call from helper method makeCardSuit()
+     */
+    
+    public Card(){
+        value = (int) (Math.random() * 10) + 2;
+        cardFace = "" + value + makeCardSuit();
+    }
+    
+    
+    
+    /** makeCardSuit()
+     * This method returns a random suit string for the card face. 
+     * Make a random number [1-4] and return either "H", "D", "C", "S" or the unicode values below
+     * Heart char      ""+'\u2665'
+     * Diamond char    ""+'\u2666'
+     * Club char       "" +'\u2663'
+     * Spade char      "" +'\u2660'    
+     */
+    
+    public String makeCardSuit(){
+        int suit = (int) (Math.random() * 4) + 1;
+        
+        switch(suit) {
+            case 1: return ""+'\u2665';
+            case 2: return ""+'\u2666';
+            case 3: return ""+'\u2663';
+            case 4: return ""+'\u2660';
+            default: return "";
+        }
+       
+        
+    }
+    
+    
+    //Write accessor methods for each of the two instance variables
+    
+    public int getValue(){
+        return value;
+    }
+    
+    public String getCardFace(){
+        return cardFace;
+    }
+    
+    
+}

@@ -1,0 +1,11 @@
+#BlueJ class context
+comment0.target=HelperMethods
+comment1.params=args
+comment1.target=void\ main(java.lang.String[])
+comment2.params=title
+comment2.target=void\ printTitleCase(java.lang.String)
+comment3.params=let
+comment3.target=boolean\ getIsLowercase(char)
+comment4.params=let
+comment4.target=char\ makeUppercase(char)
+numComments=5

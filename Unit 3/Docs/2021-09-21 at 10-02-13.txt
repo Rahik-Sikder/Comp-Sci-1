@@ -1,0 +1,20 @@
+H:\Comp Sci 1\Unit 3\Equals.java
+
+import java.util.Scanner;
+
+public class Equals {
+    public static void main(String args[]){
+        
+        Scanner reader = new Scanner(System.in);
+        
+        // Using == to compare strings is DANGEROUS!!
+        
+        String word1 = "hello";
+        String word2 = "hello";
+        String word3 = new String("hello");
+        
+        System.out.println(word1 == word2);
+        System.out.println(word3 == word1);
+        
+    }
+}

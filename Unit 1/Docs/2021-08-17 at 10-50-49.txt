@@ -1,0 +1,27 @@
+C:\Users\sr10081753\Desktop\Comp Sci 1\Unit 1\VariablesExample.java
+
+public class VariablesExample {
+    public static void main(String[] args){
+        
+        // 1. Declaring the variable
+        
+        int x;
+        // int is the type of variable
+        // num is the variable name
+        
+        // 2. initializing the variable (storing a value)
+        
+        x = 10;
+        
+        System.out.println(x);
+        
+        int y = 9;
+        
+        System.out.println(y);
+        
+        // Using variables for math
+        System.out.println(x+y);
+        
+        
+    }
+}

@@ -1,0 +1,15 @@
+H:\Comp Sci 1\Unit 1\HelloWorld.java
+
+public class HelloWorld { // this is the class declaration. 
+    public static void main(String[] args){ // This is the main method.
+                                            // The main method runs the program.
+        System.out.println("Hello World!");
+        // This is the println method
+        // "Hello world" is test (String)
+        System.out.println("Hello World 2");
+    
+        char value = 'A' + 5;
+        System.out.println(value);
+    
+    }
+}

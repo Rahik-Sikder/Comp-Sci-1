@@ -1,0 +1,27 @@
+H:\Comp Sci 1\Unit 2\Substring.java
+
+public class Substring {
+    public static void main(String args[]){
+        
+        /* substring(int a, int b) OR substring(int a) OVERLOADED
+         * Substring will return a section of a string starting at index a
+         * and going up to but not including index b
+         * If we only pass index a, we stop at the end of the string.
+         * input: int
+         * output: String
+         */
+        
+        String word = "racecar";
+        //             0123456
+        
+        // getting race from racecar
+        String sub1 = word.substring(0,4);
+        System.out.println(sub1);
+        
+        // getting car from racecar
+        String sub2 = word.substring(5,8);
+        System.out.prinln(sub2);
+        
+        
+    }
+}

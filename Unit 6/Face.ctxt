@@ -1,0 +1,7 @@
+#BlueJ class context
+comment0.target=Face
+comment1.params=gc
+comment1.target=Face(javafx.scene.canvas.GraphicsContext)
+comment2.params=gc
+comment2.target=void\ drawEyes(javafx.scene.canvas.GraphicsContext)
+numComments=3

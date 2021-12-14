@@ -1,0 +1,8 @@
+#BlueJ class context
+comment0.target=Plant
+comment1.params=gc\ x\ y
+comment1.target=Plant(javafx.scene.canvas.GraphicsContext,\ int,\ int)
+comment2.params=
+comment2.target=void\ drawTreeTop()
+comment2.text=\ drawTreeTop()\r\n\ This\ method\ will\ draw\ a\ triangle\ from\ coordinate\ (x,y)\ using\ fillPolygon().\r\n\ See\ the\ instructions\ for\ coordinates\ of\ each\ corner.\r\n
+numComments=3

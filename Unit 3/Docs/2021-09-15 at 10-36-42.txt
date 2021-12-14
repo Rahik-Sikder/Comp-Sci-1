@@ -1,0 +1,26 @@
+H:\Comp Sci 1\Unit 3\OddEvenInt.java
+
+public class OddEvenInt {
+    public static void main (String args[]){
+    
+    
+    
+    }
+}
+H:\Comp Sci 1\Unit 3\OddEvenString.java
+
+public class OddEvenString {
+    public static void main (String args[]){
+    
+        
+        
+    }
+}
+H:\Comp Sci 1\Unit 3\DiscountDeterminer.java
+
+public class DiscountDeterminer {
+    public static void main (String args[]){
+    
+    
+    }
+}

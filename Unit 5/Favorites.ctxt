@@ -1,0 +1,9 @@
+#BlueJ class context
+comment0.target=Favorites
+comment1.params=
+comment1.target=Favorites()
+comment2.params=name\ food\ color\ music\ automobiles\ sport
+comment2.target=Favorites(java.lang.String,\ java.lang.String,\ java.lang.String,\ java.lang.String,\ java.lang.String,\ java.lang.String)
+comment3.params=
+comment3.target=java.lang.String\ toString()
+numComments=4

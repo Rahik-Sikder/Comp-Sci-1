@@ -1,0 +1,10 @@
+H:\Comp Sci 1\Unit 1\Typecasting.java
+
+public class Typecasting {
+    public static void main (String args[]) {
+    
+        System.out.println();
+    
+    
+    }
+}

@@ -1,0 +1,40 @@
+H:\Comp Sci 1\Unit 1\PopeyesTimeEstimator.java
+
+import java.util.Scanner;
+
+public class PopeyesTimeEstimator {
+    public static void main (String args[]){
+    
+        // initializing the variables and Scanner
+        
+        final int MINUTES_PER_GROUP = 25;
+        final int MAX_CAPACITY = 127;
+        
+        int customers;
+        int groups;
+        int totalTime;
+        
+        Scanner reader = new Scanner(System.in);
+        
+        // input
+        
+        System.out.println("=======> Popeyes Time Estimator <=======");
+        System.out.print("Enter number of expected customers: ");
+        customers = reader.nextInt();
+        
+        // calculations
+        
+        groups = customers / MAX_CAPACITY;
+            // I'm assuming that we don't care about less than 127
+        totalTime = groups * MINUTES_PER_GROUP;
+        
+        // output
+        
+        System.out.println( "Total Minutes: " + totalTime);
+        
+        
+        
+        
+    
+    }
+}

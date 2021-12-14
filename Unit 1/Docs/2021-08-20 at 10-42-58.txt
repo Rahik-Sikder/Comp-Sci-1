@@ -1,0 +1,43 @@
+C:\Users\sr10081753\Desktop\Comp Sci 1\Unit 1\Arithmetic.java
+
+public class Arithmetic {
+    public static void main(String args[]){
+    
+        // 1
+        int num1 = 25;
+        int num2 = 6;
+        
+        // 2
+        // why do we have to initalize them with 0 if they have a default vlaue of 0?
+        int sum = 0;
+        int difference = 0;
+        int product = 0;
+        int quotient = 0;
+        int remainder = 0;
+        
+        // 3
+        sum = num1 + num2;
+        
+        // 4
+        difference = num1 - num2;
+        
+        // 5
+        product = num1 * num2;
+        
+        // 6
+        quotient = num1 / num2;
+        
+        // 7
+        remainder = num1 % num2;
+        
+        // 8
+        System.out.println(num1 + " + " + num2 + " = " + sum);
+        System.out.println(num1 + " - " + num2 + " = " + difference);
+        System.out.println(num1 + " * " + num2 + " = " + product);
+        System.out.println(num1 + " / " + num2 + " = " + quotient);
+        System.out.println(num1 + " % " + num2 + " = " + remainder);
+        
+    
+    
+    }
+}

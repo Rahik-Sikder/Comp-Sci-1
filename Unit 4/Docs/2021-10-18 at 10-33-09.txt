@@ -1,0 +1,31 @@
+H:\Comp Sci 1\Unit 4\Dice.java
+
+public class Dice {
+    public void printRolls(){
+        // use the method rollDie 3 times in your implementation
+        int roll1 = rollDice();
+        int roll2 = rollDice();
+        int roll3 = rollDice();
+        System.out.println("Roll 1 :: " + roll1);
+        System.out.println("Roll 2 :: " + roll2);
+        System.out.println("Roll 3 :: " + roll3);
+    }
+    
+    private int rollDice(){
+        return (int) (Math.random() * 6) + 1;     
+    }
+
+
+}
+H:\Comp Sci 1\Unit 4\DiceRunner.java
+
+public class DiceRunner{
+	public static void main(String[] args){
+		System.out.println("Dice Roller");
+		System.out.println("Each number represents a roll on a six sided die.");
+
+		Dice d = new Dice();
+
+		d.printRolls();
+	}
+}

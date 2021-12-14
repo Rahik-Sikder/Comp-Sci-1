@@ -1,0 +1,13 @@
+#BlueJ class context
+comment0.target=Calculator
+comment1.params=num1\ num2
+comment1.target=void\ addVoid(int,\ int)
+comment2.params=num1\ num2
+comment2.target=int\ addReturn(int,\ int)
+comment3.params=num1\ num2
+comment3.target=int\ subReturn(int,\ int)
+comment4.params=num1\ num2
+comment4.target=double\ divReturn(int,\ int)
+comment5.params=num1\ num2
+comment5.target=int\ multReturn(int,\ int)
+numComments=6

@@ -1,0 +1,44 @@
+H:\Comp Sci 1\Unit 3\Averages.java
+
+public class Averages{
+    public static void main(String args[]){
+        
+        int randNum = 0;
+        int posCount = 0;
+        int posSum = 0;
+        int negCount = 0;
+        int negSum = 0;
+        double posAvg;
+        double negAVg;
+        
+        
+        for(int i = 0; i < 100; i++){
+            randNum = (int) ( Math.random() * 2001) - 1000;
+            
+            if (randNum >= 0){
+                posCount++;
+                posSum += randNum;
+                System.out.print(" ");
+            } else {
+                negCount++;
+                negSum += randNum;
+            }
+            
+            if (randNum < 100 || randNum > -100) {
+                System.out.print(" ");
+            }
+            
+            
+            
+            if(i % 10 == 0){
+                System.out.println();
+                System.out.print(randNum + " ");
+            } else {
+                System.out.print(randNum + " ");
+            }
+            
+        
+        }
+    
+    }
+}

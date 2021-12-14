@@ -1,0 +1,7 @@
+#BlueJ class context
+comment0.target=Pumpkin
+comment1.params=gc\ bodyColor
+comment1.target=Pumpkin(javafx.scene.canvas.GraphicsContext,\ javafx.scene.paint.Color)
+comment2.params=
+comment2.target=void\ drawBody()
+numComments=3

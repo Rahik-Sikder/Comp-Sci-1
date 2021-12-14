@@ -1,0 +1,40 @@
+H:\Comp Sci 1\Unit 3\WhilePractice.java
+
+public class WhilePractice {
+    public static void main (String args[]){
+    
+        int loop1 = 1;
+        while(loop1 <= 25){
+            System.out.print(loop1 + " ");
+            loop1++;
+        }
+        
+        System.out.println();
+        
+        int loop2 = 50;
+        while(loop2 <= 70){
+            System.out.print(loop2 + " ");
+            loop2++;
+        }
+        
+        System.out.println();
+         
+        int loop3 = 0;
+        while(loop3 <= 100){
+            System.out.print(loop3 + " ");
+            loop3 += 5;
+        }
+        
+        System.out.println();
+        
+        
+        int loop4 = 0;
+        while(loop4 < 15){
+            System.out.println("computer");
+            loop4++;
+            
+        }
+        
+        
+    }
+}

@@ -1,0 +1,9 @@
+#BlueJ class context
+comment0.target=NumAvg
+comment1.params=args
+comment1.target=void\ main(java.lang.String[])
+comment2.params=num1\ num2
+comment2.target=void\ avgVoid(double,\ double)
+comment3.params=num1\ num2
+comment3.target=double\ avgReturn(double,\ double)
+numComments=4

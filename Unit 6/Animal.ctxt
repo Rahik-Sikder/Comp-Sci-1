@@ -1,0 +1,11 @@
+#BlueJ class context
+comment0.target=Animal
+comment1.params=
+comment1.target=Animal()
+comment2.params=weight\ canBreathe\ species\ isGreen
+comment2.target=Animal(int,\ boolean,\ java.lang.String,\ boolean)
+comment3.params=
+comment3.target=void\ makeNoise()
+comment4.params=
+comment4.target=java.lang.String\ toString()
+numComments=5

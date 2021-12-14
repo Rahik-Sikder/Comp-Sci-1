@@ -1,0 +1,12 @@
+H:\Comp Sci 1\Unit 3\NestedIf.java
+
+public class NestedIf {
+    public static void main (String args[]){
+    
+        // Nested if is an if statement inside another if statement
+        // This is useful for checking multiple conditions and fitting a value to 
+        // a range
+        
+    
+    }
+}

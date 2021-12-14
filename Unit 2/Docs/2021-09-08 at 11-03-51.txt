@@ -1,0 +1,49 @@
+H:\Comp Sci 1\Unit 2\Android.java
+
+
+
+import javafx.application.Application;
+import javafx.scene.Group;
+import javafx.scene.Scene;
+import javafx.scene.canvas.Canvas;
+import javafx.scene.canvas.GraphicsContext;
+import javafx.scene.paint.Color;
+import javafx.scene.shape.ArcType;
+import javafx.stage.Stage;
+
+
+public class Android extends Application{
+
+    public static void main(String[] args) {
+        launch(args);
+    }
+ 
+    @Override //DONT MAKE ANY CHANGES HERE
+    public void start(Stage primaryStage) {
+        primaryStage.setTitle("Drawing Operations Test");
+        Group root = new Group();
+        Canvas canvas = new Canvas(500, 500);
+        GraphicsContext gc = canvas.getGraphicsContext2D();
+        drawShapes(gc);
+        root.getChildren().add(canvas);
+        primaryStage.setScene(new Scene(root));
+        primaryStage.show();
+    }
+    
+    //Write all changes to code in this method.
+    public void drawShapes(GraphicsContext gc){
+        
+        
+        // color
+        gc.setFill(Color.rgb(165, 198, 57));
+        
+        // make the main body
+        gc.fillRect(150, 150, 150, 175);
+        
+        // arms
+        gc.fillRect(100,150, 35, 100);
+        
+        
+        
+    }
+}

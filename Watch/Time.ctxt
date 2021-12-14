@@ -1,0 +1,11 @@
+#BlueJ class context
+comment0.target=Time
+comment1.params=
+comment1.target=Time()
+comment2.params=x
+comment2.target=int\ getTopVal(int)
+comment3.params=x
+comment3.target=int\ getBottomVal(int)
+comment4.params=time
+comment4.target=int[]\ getTimeCoords(int)
+numComments=5

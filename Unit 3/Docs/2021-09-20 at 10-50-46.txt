@@ -1,0 +1,31 @@
+H:\Comp Sci 1\Unit 3\RichterScale.java
+
+import java.util.Scanner;
+
+public class RichterScale {
+public static void main (String args[]){
+    Scanner reader = new Scanner(System.in);
+    
+    System.out.print("Enter a magnitude on the Richter scale ==>> ");
+    double scale = reader.nextDouble();
+    
+    String damage = "";
+        if (scale > 8){
+            damage = "Most structures fall";
+        } else if (scale > 7){
+            damage = "Most buildings destroyed";
+        } else if (scale > 6) {
+            damage = "Many buildings considerable damaged; some collapse";
+        } else if (scale > 4.5) {
+            damage = "Damage to poorly constructed buildings";
+        } else if (scale > 3.5) {
+            damage = "Felt by many people, no destruction";
+        } else {
+            damage = "Generally not felt by people";
+        }
+        
+        System.out.println("Damage = " + damage);
+    
+    }
+}
+

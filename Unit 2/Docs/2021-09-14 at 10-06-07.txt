@@ -1,0 +1,24 @@
+H:\Comp Sci 1\Unit 2\Replace.java
+
+import java.util.Scanner;
+
+public class Replace {
+    public static void main (String args[]){
+    
+      Scanner reader = new Scanner(System.in);
+      
+      System.out.println("Enter a string --> ");
+      String input = reader.nextLine();
+      int firstA = input.indexOf("a");
+      
+      System.out.println(input.substring(0, firstA) + "*" + input.substring(firstA + 1));
+      
+      
+      
+      
+     
+      
+      
+        
+    }
+}

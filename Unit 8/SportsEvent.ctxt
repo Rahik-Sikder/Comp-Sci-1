@@ -1,0 +1,20 @@
+#BlueJ class context
+comment0.target=SportsEvent
+comment1.params=
+comment1.target=void\ readScores()
+comment1.text=\ This\ method\ prompts\ the\ user\ to\ enter\ in\ 8\ scores\ and\ stores\r\n\ them\ in\ the\ array\ scores.\r\n
+comment2.params=
+comment2.target=double\ lowest()
+comment2.text=\ Determines\ which\ score\ in\ scores\ is\ the\ lowest\r\n\ @return\ the\ lowest\ score\ in\ scores\r\n
+comment3.params=
+comment3.target=double\ highest()
+comment3.text=\ Determines\ which\ score\ in\ scores\ is\ the\ highest\r\n\ @return\ the\ highest\ score\ in\ scores\r\n
+comment4.params=
+comment4.target=double\ average()
+comment4.text=\ Calculates\ the\ average\ of\ scores\ with\ the\ lowest\ and\ highest\ scores\r\n\ thrown\ out.\r\n\ @return\ the\ average\r\n
+comment5.params=
+comment5.target=void\ printSummary()
+comment5.text=\ This\ method\ prints\ a\ summary\ report\ which\ includes\ the\ original\ list\ of\r\n\ scores,\ the\ average\ of\ the\ scores,\ the\ lowest\ score,\ and\ the\ highest\r\n\ score.\r\n
+comment6.params=args
+comment6.target=void\ main(java.lang.String[])
+numComments=7

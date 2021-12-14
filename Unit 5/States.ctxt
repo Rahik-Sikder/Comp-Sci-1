@@ -1,0 +1,9 @@
+#BlueJ class context
+comment0.target=States
+comment1.params=
+comment1.target=States()
+comment2.params=name\ bird\ flower\ song\ motto\ tree
+comment2.target=States(java.lang.String,\ java.lang.String,\ java.lang.String,\ java.lang.String,\ java.lang.String,\ java.lang.String)
+comment3.params=
+comment3.target=java.lang.String\ toString()
+numComments=4

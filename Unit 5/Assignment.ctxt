@@ -1,0 +1,21 @@
+#BlueJ class context
+comment0.target=Assignment
+comment1.params=
+comment1.target=Assignment()
+comment2.params=name\ type\ score
+comment2.target=Assignment(java.lang.String,\ java.lang.String,\ int)
+comment3.params=
+comment3.target=java.lang.String\ getName()
+comment4.params=
+comment4.target=java.lang.String\ getType()
+comment5.params=
+comment5.target=int\ getScore()
+comment6.params=name
+comment6.target=void\ setName(java.lang.String)
+comment7.params=type
+comment7.target=void\ setType(java.lang.String)
+comment8.params=score
+comment8.target=void\ setScore(int)
+comment9.params=
+comment9.target=java.lang.String\ getLetterGrade()
+numComments=10

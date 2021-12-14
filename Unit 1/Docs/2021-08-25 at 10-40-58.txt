@@ -1,0 +1,90 @@
+H:\Comp Sci 1\Unit 1\ScannerInput.java
+
+import java.util.Scanner;
+
+public class ScannerInput {
+    public static void main (String args[]){
+    
+    Scanner reader = new Scanner(System.in);
+    
+    // Inputs
+    
+    // int
+    int int1, int2;
+    System.out.print("Enter an  ::");
+    int1 = reader.nextInt();
+    System.out.print("Enter an  ::");
+    int2 = reader.nextInt();
+    
+    // double 
+    double double1, double2;
+    System.out.print("Enter an  ::");
+    double1 = reader.nextDouble();
+    System.out.print("Enter an  ::");
+    double2 = reader.nextDouble();
+    
+    // float
+    float float1, float2;
+    System.out.print("Enter an  ::");
+    float1 = reader.nextFloat();
+    System.out.print("Enter an  ::");
+    float2 = reader.nextFloat();
+    
+    // short
+    short short1, short2;
+    System.out.print("Enter an  ::");
+    short1 = reader.nextShort();
+    System.out.print("Enter an  ::");
+    short2 = reader.nextShort();
+    
+    // byte
+    byte byte1, byte2;
+    System.out.print("Enter an  ::");
+    byte1 = reader.nextByte();
+    System.out.print("Enter an  ::");
+    byte2 = reader.nextByte();
+    
+    
+    // long
+    long long1, long2;
+    System.out.print("Enter an  ::");
+    long1 = reader.nextLong();
+    System.out.print("Enter an  ::");
+    long2 = reader.nextLong();
+    
+    
+    // Outputs
+    
+    // int
+    System.out.println("integer one = " + int1);
+    System.out.println("integer two = " + int1);
+    
+    // double 
+    System.out.println("integer one = " + int1);
+    System.out.println("integer one = " + int2);
+    
+    // float
+    System.out.println("float one = " + float1);
+    System.out.println("float two = " + float2);
+    
+    // short
+    System.out.println("short one = " + short1);
+    System.out.println("short two = " + short2);
+    
+    // byte
+    System.out.println("byte one = " + byte1);
+    System.out.println("byte two = " + byte2);
+    
+    // long
+    System.out.println("long one = " + long1);
+    System.out.println("long two = " + long2);
+    
+    
+    
+    
+    
+    
+    
+    
+    }
+}

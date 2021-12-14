@@ -1,0 +1,16 @@
+C:\Users\sr10081753\Desktop\Comp Sci 1\Unit 1\RealVariables.java
+
+public class RealVariables {
+    public static void main( String args[]){
+    
+        // Real number - any number with a remainder
+        // Could be at any point on a numer line
+        
+        // float - 32 bits
+        // This datatype can only store up to 6 significant decimal digits 
+        
+        float num1 = 1.01234567f;
+        
+        System.out.println(num1);
+    }
+}

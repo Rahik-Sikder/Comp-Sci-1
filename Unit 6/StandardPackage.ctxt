@@ -1,0 +1,13 @@
+#BlueJ class context
+comment0.target=StandardPackage
+comment1.params=n
+comment1.target=StandardPackage(int)
+comment2.params=
+comment2.target=java.lang.String\ getResort()
+comment3.params=
+comment3.target=double\ getCostPerNight()
+comment4.params=
+comment4.target=double\ getTotalCost()
+comment5.params=
+comment5.target=java.lang.String\ toString()
+numComments=6

@@ -1,0 +1,91 @@
+H:\Comp Sci 1\Unit 5\Favorites.java
+
+public class Favorites {
+    
+    private String name;
+    private String food;
+    private String color;
+    private String music;
+    private String automobiles;
+    private String sport;
+    
+    public Favorites(){
+        name = "";
+        food = "";
+        color = "";
+        music = "";
+        automobiles = "";
+        sport = "";
+    
+    }
+        
+        
+    
+    public Favorites(String name, String food, String color, String music, 
+                     String automobiles, String sport){
+        this.name = name;
+        this.food = food;
+        this.color = color;
+        this.music = music;
+        this.automobiles = automobiles;
+        this.sport = sport;
+    }
+    
+    public String toString(){
+        return  "name: " + name +
+                "\nfood: " + food +
+                "\ncolor: " + color + 
+                "\nmusic: " + music +
+                "\nautomobiles: " + automobiles +
+                "\nsport: " + sport;
+                
+    }
+    
+    
+    
+    
+    
+}
+H:\Comp Sci 1\Unit 5\FavoritesManager.java
+
+import java.util.*;
+
+public class FavoritesManager {
+    
+    private String name;
+    private String food;
+    private String color;
+    private String music;
+    private String automobiles;
+    private String sport;
+    private Favorites myFavorites;
+    
+    public void inputFavorites(){
+        Scanner keyboard = new Scanner(System.in);
+        System.out.println("Enter person's name -->");
+        String name = keyboard.nextLine();
+        System.out.println("Enter favorite food -->");
+        String food = keyboard.nextLine();
+        System.out.println("Enter favorite color -->");
+        String color = keyboard.nextLine();
+        System.out.println("Enter favorite music -->");
+        String music = keyboard.nextLine();
+        System.out.println("Enter favorite automobile -->");
+        String auto = keyboard.nextLine();
+        System.out.println("Enter favorite sport -->");
+        String sport = keyboard.nextLine();
+        keyboard.close();
+        
+        myFavorites = new Favorites(name, food, color, music, auto, sport);
+    }
+    
+    public void printFavorites(){
+        System.out.println(myFavorites);
+    }
+    
+    public static void main(String args[]){
+        FavoritesManager app = new FavoritesManager();
+        app.inputFavorites();
+        app.printFavorites();
+    }
+}

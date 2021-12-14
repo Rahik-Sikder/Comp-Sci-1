@@ -1,0 +1,141 @@
+H:\Comp Sci 1\Unit 5\WatchTV.java
+
+import java.util.*;
+
+public class WatchTV {
+
+  public static void main(String[] args) {
+    Television tv = new Television();
+    Scanner keyboard = new Scanner(System.in);
+    int sel = 0;
+    System.out.println("**********************");
+    System.out.println("* My Television *");
+    System.out.println("**********************");
+    do {
+      System.out.println();
+      System.out.println(" Current Settings");
+      System.out.println("=====================");
+      System.out.println(" Channel = " + tv.getChannel());
+      System.out.println(" Volume = " + tv.getVolume());
+      System.out.println("=====================");
+      System.out.println("1. Increase Channel");
+      System.out.println("2. Decrease Channel");
+      System.out.println("3. Select Channel");
+      System.out.println("4. Increase Volume");
+      System.out.println("5. Decrease Volume");
+      System.out.println("6. Turn TV off");
+      System.out.println();
+      System.out.print("Make Selection -->");
+      sel = keyboard.nextInt();
+      if (sel == 1) {
+        tv.increaseChannel();
+      }
+      if (sel == 2) {
+        tv.decreaseChannel();
+      }
+      if (sel == 3) {
+        System.out.println();
+        System.out.print("Enter channel -->");
+        int channel = keyboard.nextInt();
+        tv.selectChannel(channel);
+      }
+      if (sel == 4) {
+        tv.increaseVolume();
+      }
+      if (sel == 5) {
+        tv.decreaseVolume();
+      }
+    } while (sel != 6);
+    System.out.println();
+    System.out.println("TV is off, thanks for watching!");
+    System.out.println();
+    System.out.println();
+  }
+}
+H:\Comp Sci 1\Unit 5\Television.java
+
+public class Television {
+
+  // constants
+  public final int MAX_CHANNEL = 100;
+  public final int MIN_CHANNEL = 1;
+  public final int MAX_VOLUME = 10;
+  public final int MIN_VOLUME = 1;
+  public final int DEFAULT_CHANNEL = 3;
+  public final int DEFAULT_VOLUME = 5;
+
+  // instance variables
+  private int channel;
+  private int volume;
+
+  // constructors
+  public Television() {}
+
+  public Television(int c, int v) {
+    channel = c;
+    volume = v;
+  }
+
+  // accessor methods
+  public int getChannel() {
+    return channel;
+  }
+
+  public int getVolume() {
+    return volume;
+  }
+
+  // mutator methods
+
+  /* This method increases the channel by one.
+   * If the channel increase exceeds the value of MAX_CHANNEL
+   * then the channel should be set to MIN_CHANNEL.
+   */
+  public void increaseChannel() {
+    channel++;
+    if (channel > MAX_CHANNEL) {
+      channel = MIN_CHANNEL;
+    }
+  }
+
+  /* This method decreases the channel by one.
+   * If the channel decrease exceeds the value of MIN_CHANNEL
+   * then the channel should be set to MAX_CHANNEL.
+   */
+  public void decreaseChannel() {
+    channel--;
+    if (channel < MIN_CHANNEL) {
+      channel = MAX_CHANNEL;
+    }
+  }
+
+  /* This method changes the channel to the value specified
+   * in the parameter list. If the value of the parameter is
+   * not a valid channel number then the channel should
+   * remain unchanged.
+   * @param c the channel to be changed to
+   */
+  public void selectChannel(int c) {
+    channel = c;
+  }
+
+  /* This method increases the volume by one.
+   * If MAX_VOLUME is reached a call to increaseVolume
+   * should have no effect.
+   */
+  public void increaseVolume() {
+    if (volume != MAX_VOLUME) {
+      volume++;
+    }
+  }
+
+  /* This method decreases the volume by one.
+   * If MIN_VOLUME is reached a call to decreaseVolume
+   * should have no effect.
+   */
+  public void decreaseVolume() {
+    if (volume != MIN_VOLUME) {
+      volume--;
+    }
+  }
+}

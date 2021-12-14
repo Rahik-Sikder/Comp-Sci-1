@@ -1,0 +1,390 @@
+H:\Comp Sci 1\Unit 5\BlackJack.java
+
+import java.util.Scanner;
+public class BlackJack{
+    public static void main(String args[]) {
+        Scanner key = new Scanner(System.in);
+        int cash = 0;
+        System.out.println("Welcome to blackjack!");
+        
+        //1. Ask user for name. 
+        System.out.print("Enter your name: ");
+        String name = key.nextLine();
+        
+        
+        
+        //2. Create a Hand object named player.
+        
+        boolean keepPlaying;
+        
+        do {
+            keepPlaying = false;
+            Hand player = new Hand(name);
+            player.hit();
+            player.hit();
+            
+            System.out.print("Place your bet: $");
+            int bet = key.nextInt();
+            
+            
+            System.out.println("\nYour hand: " );
+            
+            
+            //This loop run while player is not bust and player does not stay
+            while(!player.getBust() && !player.getStay()){ 
+                
+                //3. Invoke the toString method to see the players hand.
+                System.out.println("\n" + player);
+                
+                //4.Prompt the user with a menu of choices to hit (1) or stay(1)
+                
+                System.out.println("\nMenu:");
+                System.out.println("1. Hit ");
+                System.out.println("2. Stay ");
+                System.out.print("Enter choice: ");
+                int menu = key.nextInt();
+                
+                
+                /*5. Use an if else to call player.hit("7H", 7) when the user enters 1. 
+                *    When the user enters 2 call stay()
+                * note: in the 80pt version the only card is 7 of hearts. Use the parameters in the comment above.
+                */
+                
+                if (menu == 1){
+                    player.hit();
+                } else {
+                    player.stay();
+                }
+    
+            }
+            
+            System.out.println("\n" + player); // Annoys me how it doesn't show your last card
+            
+            
+            Hand dealer = new Hand("Dealer");
+            dealer.dealerHit(true); // aceOne is true
+            key.nextLine();
+            
+            while(!dealer.getBust() && !dealer.getStay()){ 
+                
+                
+                
+                System.out.println("\n" + dealer);
+                
+                System.out.println("Press enter to countine");
+                key.nextLine();
+                
+                System.out.println();
+                if(dealer.getHandTotal() < 17){
+                    System.out.println("Dealer hits");
+                    boolean aceOne = true;
+                    if(dealer.getHandTotal() + 11 >= 17 && dealer.getHandTotal() + 11 <= 21){
+                       aceOne = false;
+                    }
+                    dealer.dealerHit(aceOne);
+                } else {
+                    dealer.stay();
+                }
+                
+            }
+            
+            System.out.println("\n" + dealer); // Annoys me how it doesn't show your last card
+            
+           
+            
+            //6. Print out the players handTotal()
+            System.out.println("\nPlayer Total: " + player.getHandTotal());
+            System.out.println("Dealer Total: " + dealer.getHandTotal());
+            
+            int handVal = player.getHandTotal();
+            int dealVal = dealer.getHandTotal();
+            
+            // The cash is only tracking the amount they make within the game, so i dont
+            // need to double it - to them it's doubled because they pocket the cash earned
+            // here while also having their bet
+            
+            if (handVal > 21){
+                System.out.println("Player busts. Dealer wins.");
+                cash -= bet;
+            } else if (dealVal > 21){
+                System.out.println("Dealer busts. Player wins!");
+                cash += bet;
+            } else if ( handVal > dealVal){
+                System.out.println("Player wins!");
+                cash += bet;
+            } else if (handVal == dealVal){
+                System.out.println("Stand off. No winner.");
+                // "If there is a stand-off (a player having the same total as the dealer),chips 
+                // are paid out or collected."
+                // https://bicyclecards.com/how-to-play/blackjack/
+            }else {
+                System.out.println("Player loses");
+                cash -= bet;
+            }
+            
+            
+            System.out.println("\nCash made/lost: $" + cash);
+            System.out.println("Do you want to keep playing? (y/n)");
+            String yesNo = key.next();
+            
+            if(yesNo.charAt(0) == 'Y' || yesNo.charAt(0) == 'y'){
+                keepPlaying = true;
+            }
+            
+            
+        } while(keepPlaying);    
+     
+        
+    }
+}
+H:\Comp Sci 1\Unit 5\Hand.java
+
+public class Hand {
+    private String name;
+    private String cardsInHand; //This is a text representation of a players hand.
+    private int handTotal;
+    private boolean bust;
+    private boolean stay;
+    
+    //1. Constructors
+    /**default constructor
+     * This constructor should change the default value 
+     * for name and cardsInHand to ""
+     */
+    
+    public Hand(){
+        name = "";
+        cardsInHand = "";
+    }
+    
+    
+    /** constructor
+     * @Param The name of the player.
+     * This constructor changes the default value of cardsInHand to ""
+     * and assigns the name instance variable.
+     */
+    public Hand(String player){
+        name = player;
+        cardsInHand = "";
+    }
+    
+    
+    
+    //2. Accessors
+    /** Accessor Methods
+     * Write an accessor method for each of the five instance variables.
+     */
+    public String getName(){
+        return name;
+    }
+    
+    public String getCardsInHand(){
+        return cardsInHand;
+    }
+    
+    public int getHandTotal(){
+        return handTotal;
+    }
+        
+    public boolean getBust(){
+        return bust;
+    }
+    
+    public boolean getStay(){
+        return stay;
+    }
+
+    
+    
+    //3. Mutator methods
+    /** setName()
+     * @param the new name value for the object.
+     */
+    
+    public void setName(String name){
+        this.name = name;
+    }
+    
+    
+    /** hit(String cardFace, int cardValue)
+     * @param String cardFace - this is the String representation of the card.
+     * @param int cardValue - this is the numeric value of the card.
+     * This void method represents the hit action when a player gets another card.
+     * Adds the cardFace to the cardsInHand variable and increases the handTotal.
+     * Call the helper method checkForBust() to determine if the player has more than 21.
+     */
+    
+    public void hit(){
+        Card card = new Card();
+        cardsInHand += " " + card.getCardFace();
+        handTotal += card.getValue();
+        checkForBust();
+    }
+    
+    public void dealerHit(boolean aceValOne){
+        Card card = new Card(aceValOne);
+        cardsInHand += " " + card.getCardFace();
+        handTotal += card.getValue();
+        checkForBust();
+    }
+    
+    
+    
+    /** checkForBust()
+     * This void helper method is used to set the instance variable bust to true when 
+     * hand total is greater than 21. Call this method inside hit().
+     */
+    
+    public void checkForBust(){
+        if(handTotal > 21){
+            bust = true;
+        }
+    }
+    
+    
+    /** stay()
+     * This void method is called when the player decides to stop drawing cards. 
+     * Set the instance variable stay to true.
+     */
+    
+    public void stay(){
+        stay = true;
+    }
+    
+    
+    
+    //4. toString
+    /** toString()
+     * Implement a toString to return the name, cardsInHand, and total.
+     */
+        
+    public String toString(){
+        
+        if(cardsInHand.length() < 4){
+            return "Name: " + name +
+               "\nHand: " + "[XX] [XX]" +
+               "\nTotal: " + handTotal;
+        }
+        
+        if(cardsInHand.length() < 9){
+            return "Name: " + name +
+               "\nHand: " +  cardsInHand + " [XX]" +
+               "\nTotal: " + handTotal;
+        }
+        
+        return "Name: " + name +
+               "\nHand: " + cardsInHand +
+               "\nTotal: " + handTotal;
+    }
+    
+        
+}
+H:\Comp Sci 1\Unit 5\Card.java
+
+import java.util.Scanner;
+
+public class Card {
+    private int value;
+    private String cardFace;
+    
+    
+    
+    /** default constructor
+     * This constructor should assign a random value [2-11] to value.
+     * Initialize cardFace with the value + the call from helper method makeCardSuit()
+     * 
+     * made it make values from [1-13] 
+     */
+    
+    public Card(){
+        value = (int) (Math.random() * 13) + 1;
+        cardFace = "[" + value + makeCardSuit() + "]";
+        if(value == 1){
+            cardFace = "[" + "A" + makeCardSuit() + "]";
+            value = aceValue();
+        } else if(value == 11){
+            cardFace = "[" + "J" + makeCardSuit() + "]";
+            value = 10;
+        } else if(value == 12){
+            cardFace = "[" + "Q" + makeCardSuit() + "]";
+            value = 10;
+        } else if(value == 13){
+            cardFace = "[" + "K" + makeCardSuit() + "]";
+            value = 10;
+        }
+        
+        
+        
+    }
+    
+    public Card(boolean aceValOne){
+        value = (int) (Math.random() * 13) + 1;
+        cardFace = "[" + value + makeCardSuit() + "]";
+        if(value == 1){
+            cardFace = "[" + "A" + makeCardSuit() + "]";
+            if(!aceValOne){
+            value = 11;
+            }
+        } else if(value == 11){
+            cardFace = "[" + "J" + makeCardSuit() + "]";
+            value = 10;
+        } else if(value == 12){
+            cardFace = "[" + "Q" + makeCardSuit() + "]";
+            value = 10;
+        } else if(value == 13){
+            cardFace = "[" + "K" + makeCardSuit() + "]";
+            value = 10;
+        }
+        
+        
+    }
+    
+    public int aceValue(){
+        Scanner reader = new Scanner(System.in);
+        System.out.print("Ace value [1] or [11]? (1/2)");
+        String aceValSelect = reader.nextLine();
+        if (aceValSelect.equals("1")){
+            return 1;
+        }
+        return 11;
+        
+    }
+    
+    
+    
+    /** makeCardSuit()
+     * This method returns a random suit string for the card face. 
+     * Make a random number [1-4] and return either "H", "D", "C", "S" or the unicode values below
+     * Heart char      ""+'\u2665'
+     * Diamond char    ""+'\u2666'
+     * Club char       "" +'\u2663'
+     * Spade char      "" +'\u2660'    
+     */
+    
+    public String makeCardSuit(){
+        int suit = (int) (Math.random() * 4) + 1;
+        
+        switch(suit) {
+            case 1: return ""+'\u2665';
+            case 2: return ""+'\u2666';
+            case 3: return ""+'\u2663';
+            case 4: return ""+'\u2660';
+            default: return "";
+        }
+       
+        
+    }
+    
+    
+    //Write accessor methods for each of the two instance variables
+    
+    public int getValue(){
+        return value;
+    }
+    
+    public String getCardFace(){
+        return cardFace;
+    }
+    
+    
+}

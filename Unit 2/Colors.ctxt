@@ -1,0 +1,9 @@
+#BlueJ class context
+comment0.target=Colors
+comment1.params=args
+comment1.target=void\ main(java.lang.String[])
+comment2.params=primaryStage
+comment2.target=void\ start(javafx.stage.Stage)
+comment3.params=gc
+comment3.target=void\ drawShapes(javafx.scene.canvas.GraphicsContext)
+numComments=4

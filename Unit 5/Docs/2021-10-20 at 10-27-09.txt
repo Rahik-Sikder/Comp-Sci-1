@@ -1,0 +1,24 @@
+H:\Comp Sci 1\Unit 5\Person.java
+
+public class Person {
+    
+    // this class will demonstate making a person object with several constructor methods.
+    // this class is a "blueprint" for the attributes that represent a person.
+    
+    private String name;
+    private int age;
+    private double weight;
+    private double height;
+    
+    
+    
+    
+    public void printPerson(){
+        System.out.println("Name: " + name);
+        System.out.println("Age: " + age);
+        System.out.println("Weight: " + weight);
+        System.out.println("Height: " + height);
+    }
+    
+
+}

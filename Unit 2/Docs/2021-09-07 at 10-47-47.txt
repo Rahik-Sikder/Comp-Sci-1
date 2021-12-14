@@ -1,0 +1,94 @@
+H:\Comp Sci 1\Unit 2\Colors.java
+
+
+
+import javafx.application.Application;
+import javafx.scene.Group;
+import javafx.scene.Scene;
+import javafx.scene.canvas.Canvas;
+import javafx.scene.canvas.GraphicsContext;
+import javafx.scene.paint.Color;
+import javafx.scene.shape.ArcType;
+import javafx.stage.Stage;
+
+
+public class Colors extends Application{
+
+    public static void main(String[] args) {
+        launch(args);
+    }
+ 
+    @Override //DONT MAKE ANY CHANGES HERE
+    public void start(Stage primaryStage) {
+        primaryStage.setTitle("Drawing Operations Test");
+        Group root = new Group();
+        Canvas canvas = new Canvas(650, 650);
+        GraphicsContext gc = canvas.getGraphicsContext2D();
+        drawShapes(gc);
+        root.getChildren().add(canvas);
+        primaryStage.setScene(new Scene(root));
+        primaryStage.show();
+    }
+    
+    //Write all changes to code in this method.
+    public void drawShapes(GraphicsContext gc){
+        
+        // 1st row
+        gc.setFill(Color.RED);
+        gc.fillOval(50, 50, 100, 100);
+        
+        gc.setFill(Color.BLUE);
+        gc.fillOval(200, 50, 100, 100);
+        
+        gc.setFill(Color.MEDIUMTURQUOISE);
+        gc.fillOval(350, 50, 100, 100);
+        
+        gc.setFill(Color.OLIVEDRAB);
+        gc.fillOval(500, 50, 100, 100);
+        
+        // 2nd row
+        gc.setFill(Color.SLATEGRAY);
+        gc.fillOval(50, 200, 100, 100);
+        
+        gc.setFill(Color.GOLDENROD);
+        gc.fillOval(200, 200, 100, 100);
+        
+        gc.setFill(Color.MEDIUMVIOLETRED);
+        gc.fillOval(350, 200, 100, 100);
+        
+        gc.setFill(Color.LIGHTSALMON);
+        gc.fillOval(500, 200, 100, 100);
+        
+        
+        // 3rd row
+        
+        gc.setFill(Color.FIREBRICK);
+        gc.fillOval(50, 350, 100, 100);
+        
+        gc.setFill(Color.LAWNGREEN);
+        gc.fillOval(200, 350, 100, 100);
+        
+        gc.setFill(Color.INDIANRED);
+        gc.fillOval(350, 350, 100, 100);
+        
+        gc.setFill(Color.INDIGO);
+        gc.fillOval(500, 350, 100, 100);
+        
+        // 4th row
+        
+        gc.setFill(new Color(23, 189, 42));
+        
+        gc.fillOval(50, 500, 100, 100);
+        
+        gc.setFill(Color.BLUE);
+        gc.fillOval(200, 500, 100, 100);
+        
+        gc.setFill(Color.BLUE);
+        gc.fillOval(350, 500, 100, 100);
+        
+        gc.setFill(Color.BLUE);
+        gc.fillOval(500, 500, 100, 100);
+        
+        
+    }
+}

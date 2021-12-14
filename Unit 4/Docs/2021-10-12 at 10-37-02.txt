@@ -1,0 +1,17 @@
+H:\Comp Sci 1\Unit 4\Calculator.java
+
+public class Calculator {
+    
+    // This class is our "blueprint" for a calculator object
+    // Actions: 
+    // add
+    // subt
+    // mult
+    // div
+    
+    public void  addVoid(int num1, int num2){
+        int sum = num1 + num2;
+        System.out.println(num1 + " + " + num2 + " = " sum);
+    }
+    
+}

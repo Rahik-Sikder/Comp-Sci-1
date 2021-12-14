@@ -1,0 +1,7 @@
+#BlueJ class context
+comment0.target=ArrayFunHouse
+comment1.params=nums\ start\ stop
+comment1.target=int\ getSum(int[],\ int,\ int)
+comment2.params=nums\ val
+comment2.target=int\ getCount(int[],\ int)
+numComments=3

@@ -1,0 +1,14 @@
+H:\Comp Sci 1\Unit 4\StarsRunner.java
+
+public class StarsRunner{
+   public static void main(String args[]){
+      StarsAndStripes test;
+      test = new StarsAndStripes();
+      System.out.println("Stars and Stripes");
+      test.printTwoBlankLines();
+      test.printASmallBox();
+      test.printTwoBlankLines();
+      test.printABigBox();
+      test.printTwoBlankLines();
+   }
+}

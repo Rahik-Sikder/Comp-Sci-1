@@ -1,0 +1,46 @@
+H:\Comp Sci 1\Unit 4\HelperMethods.java
+
+public class HelperMethods {
+    public static void main(String args[]){
+    
+        HelperMethods hm = new HelperMethods();
+        
+        hm.printTitleCase("hi how are you?");
+    
+    
+    
+    }
+    
+    // Helper methods are used to "decompose" a complicated method inot several smaller methods.
+    // This makes our code easier to write and maintain
+    
+    // hi how are you? ==> Hi How Are You?
+    public void printTitleCase(String title){
+        String output = "";
+        
+        for(int i = 0; i < title.length(); i++){
+            
+            // fix first letter if lowercase
+            
+            if (i == 0 && title.charAt(i) >= 97 && title.charAt(i) <= 122){
+                output += (char) (title.charAt(i) - 32);
+            }           
+            
+            // fix first letter of each word
+            
+            else if(title.charAt(i-1) == ' ' && title.charAt(i) >= 97 && title.charAt(i) <= 122){
+                output += (char) (title.charAt(i) - 32);
+            }
+            
+            // else add letter to output
+            else {
+                output += title.charAt(i);
+            }
+        
+        }
+        
+        
+        System.out.println(output);
+    }
+
+}

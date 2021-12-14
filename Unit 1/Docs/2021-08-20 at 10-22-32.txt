@@ -1,0 +1,11 @@
+C:\Users\sr10081753\Desktop\Comp Sci 1\Unit 1\MysteryNumber.java
+
+public class MysteryNumber{
+    public static void main(String args[]){
+    
+        int num1 = 25;
+        int num2 = 6;
+        
+    
+    }
+}

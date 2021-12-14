@@ -1,0 +1,7 @@
+#BlueJ class context
+comment0.target=RectanglePerimeter
+comment1.params=length\ width
+comment1.target=void\ perimVoid(int,\ int)
+comment2.params=length\ width
+comment2.target=int\ perimReturn(int,\ int)
+numComments=3

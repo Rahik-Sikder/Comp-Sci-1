@@ -1,0 +1,7 @@
+#BlueJ class context
+comment0.target=CircularCase
+comment1.params=gc
+comment1.target=CircularCase(javafx.scene.canvas.GraphicsContext)
+comment2.params=
+comment2.target=void\ drawCirclularCase()
+numComments=3

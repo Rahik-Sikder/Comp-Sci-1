@@ -1,0 +1,80 @@
+H:\Comp Sci 1\Unit 6\CombinationLock.java
+
+import java.util.*;
+
+public class CombinationLock extends Lock{
+    
+    private String combination;
+    Scanner reader = new Scanner(System.in);
+    
+    public CombinationLock(){
+        super(); // call the default constructor of the Lock class
+        combination = "";
+    }
+    
+    public CombinationLock(String combo){
+        super();
+        combination = combo;
+    }
+    
+    @Override
+    public void open(){
+        System.out.print("Input Combo --> ");
+        String combo = reader.nextLine();
+        if(combination == combo){
+            super.open();
+        }
+        
+    }
+    
+    public String toString() {
+        String str = super.toString() + "\n" +
+        "Combination = " + combination + "\n";
+        return str;
+    }
+    
+    public void setCombination(String combo){
+        combination = combo;
+    }
+    
+    public String getCombination(){
+        return combination;
+    }
+    
+
+}
+H:\Comp Sci 1\Unit 6\Lock.java
+
+public class Lock {
+
+    // Instance Variable
+    private boolean locked;
+    
+    // Default Constructor
+    public Lock() {
+        locked = true; // lock starts in a closed state
+    }
+    
+    // Mutator Methods
+    public void open() {
+        locked = false;
+    }
+    
+    public void close() {
+        locked = true;
+    }
+    
+    // Accessor Method
+    public boolean amILocked() {
+        return locked;
+    }
+    
+    // toString Method
+    public String toString() {
+        if (locked == false){
+            return "Lock is open"; 
+        } else { 
+            return "Lock is closed";
+        }
+    }
+}

@@ -1,0 +1,21 @@
+H:\Comp Sci 1\Unit 1\ASCIIArt.java
+
+public class ASCIIArt {
+    public static void main (String args[]){
+    
+        
+        System.out.println("\t\t__//");
+        System.out.println();
+        System.out.println();
+        System.out.println();
+        System.out.println();
+        System.out.println();
+        System.out.println();
+        System.out.println();
+        System.out.println();
+        System.out.println();
+    
+        
+        
+    }
+}

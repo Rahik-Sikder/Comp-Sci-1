@@ -1,0 +1,11 @@
+H:\Comp Sci 1\Unit 3\Triangle.java
+
+import java.util.Scanner;
+
+public class Triangle {
+    public static void main (String args[]){
+    
+        Scanner reader = new Scanner(System.in);
+        
+    }
+}

@@ -1,0 +1,7 @@
+#BlueJ class context
+comment0.target=Clock
+comment1.params=gc
+comment1.target=Clock(javafx.scene.canvas.GraphicsContext)
+comment2.params=
+comment2.target=void\ drawTimeMarking()
+numComments=3

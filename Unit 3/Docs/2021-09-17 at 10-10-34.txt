@@ -1,0 +1,9 @@
+H:\Comp Sci 1\Unit 3\StringLength.java
+
+import java.util.Scanner;
+
+public class StringLength{
+    public static void main (String args[]){
+    
+    }
+}

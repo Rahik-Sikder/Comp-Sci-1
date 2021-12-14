@@ -1,0 +1,26 @@
+#BlueJ class context
+comment0.target=Television
+comment1.params=
+comment1.target=Television()
+comment2.params=c\ v
+comment2.target=Television(int,\ int)
+comment3.params=
+comment3.target=int\ getChannel()
+comment4.params=
+comment4.target=int\ getVolume()
+comment5.params=
+comment5.target=void\ increaseChannel()
+comment5.text=\ This\ method\ increases\ the\ channel\ by\ one.\r\n\ If\ the\ channel\ increase\ exceeds\ the\ value\ of\ MAX_CHANNEL\r\n\ then\ the\ channel\ should\ be\ set\ to\ MIN_CHANNEL.\r\n
+comment6.params=
+comment6.target=void\ decreaseChannel()
+comment6.text=\ This\ method\ decreases\ the\ channel\ by\ one.\r\n\ If\ the\ channel\ decrease\ exceeds\ the\ value\ of\ MIN_CHANNEL\r\n\ then\ the\ channel\ should\ be\ set\ to\ MAX_CHANNEL.\r\n
+comment7.params=c
+comment7.target=void\ selectChannel(int)
+comment7.text=\ This\ method\ changes\ the\ channel\ to\ the\ value\ specified\r\n\ in\ the\ parameter\ list.\ If\ the\ value\ of\ the\ parameter\ is\r\n\ not\ a\ valid\ channel\ number\ then\ the\ channel\ should\r\n\ remain\ unchanged.\r\n\ @param\ c\ the\ channel\ to\ be\ changed\ to\r\n
+comment8.params=
+comment8.target=void\ increaseVolume()
+comment8.text=\ This\ method\ increases\ the\ volume\ by\ one.\r\n\ If\ MAX_VOLUME\ is\ reached\ a\ call\ to\ increaseVolume\r\n\ should\ have\ no\ effect.\r\n
+comment9.params=
+comment9.target=void\ decreaseVolume()
+comment9.text=\ This\ method\ decreases\ the\ volume\ by\ one.\r\n\ If\ MIN_VOLUME\ is\ reached\ a\ call\ to\ decreaseVolume\r\n\ should\ have\ no\ effect.\r\n
+numComments=10

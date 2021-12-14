@@ -1,0 +1,11 @@
+#BlueJ class context
+comment0.target=PlatinumPackage
+comment1.params=nights
+comment1.target=PlatinumPackage(int)
+comment2.params=
+comment2.target=java.lang.String\ getResort()
+comment3.params=
+comment3.target=double\ getCostPerNight()
+comment4.params=
+comment4.target=java.lang.String\ getMealPlan()
+numComments=5

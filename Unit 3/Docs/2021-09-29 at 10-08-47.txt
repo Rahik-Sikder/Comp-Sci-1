@@ -1,0 +1,19 @@
+H:\Comp Sci 1\Unit 3\WhileLoop.java
+
+import java.util.Scanner;
+
+public class WhileLoop {
+    public static void main (String args[]){
+    
+        Scanner reader = new Scanner(System.in);
+        
+        int i = 0;
+        
+        while(i < 10){
+            System.out.print(i + " ");
+            i++;
+        }
+        
+    
+    }
+}

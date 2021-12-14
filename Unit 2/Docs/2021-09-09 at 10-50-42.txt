@@ -1,0 +1,70 @@
+H:\Comp Sci 1\Unit 2\Logo.java
+
+
+
+import javafx.application.Application;
+import javafx.scene.Group;
+import javafx.scene.Scene;
+import javafx.scene.canvas.Canvas;
+import javafx.scene.canvas.GraphicsContext;
+import javafx.scene.paint.Color;
+import javafx.scene.shape.ArcType;
+import javafx.stage.Stage;
+
+
+public class Logo extends Application{
+
+    public static void main(String[] args) {
+        launch(args);
+    }
+ 
+    @Override //DONT MAKE ANY CHANGES HERE
+    public void start(Stage primaryStage) {
+        primaryStage.setTitle("Drawing Operations Test");
+        Group root = new Group();
+        Canvas canvas = new Canvas(1000, 500);
+        GraphicsContext gc = canvas.getGraphicsContext2D();
+        drawShapes(gc);
+        root.getChildren().add(canvas);
+        primaryStage.setScene(new Scene(root));
+        primaryStage.show();
+    }
+    
+    //Write all changes to code in this method.
+    public void drawShapes(GraphicsContext gc){
+        
+        // Steam Logo
+        
+        // The grey circle
+        
+        gc.setFill(Color.rgb(42, 71, 94));
+        gc.fillOval(50, 50, 250, 250);
+        
+        
+        // cog1
+        
+        gc.setFill(Color.WHITE);
+        
+        
+        
+        
+        // poly1
+        
+            // poly1 1 points
+            
+            double[] poly1x = new double[4];
+            double[] poly1y = new double[4];
+            poly1x[0] = 40; poly1y[0] = 150;
+            poly1x[1] = 40; poly1y[1] = 190;
+            poly1x[2] = 150; poly1y[2] = 240;
+            poly1x[3] = 150; poly1y[3] = 200;
+            
+        
+        gc.setFill(Color.WHITE);
+        gc.fillPolygon(poly1x, poly1y, 4);
+        gc.fillOval(130, 200, 38, 38);
+            
+            
+        
+    }
+}

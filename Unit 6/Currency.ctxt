@@ -1,0 +1,7 @@
+#BlueJ class context
+comment0.target=Currency
+comment1.params=gc\ x\ y
+comment1.target=Currency(javafx.scene.canvas.GraphicsContext,\ int,\ int)
+comment2.params=
+comment2.target=void\ drawCurrency()
+numComments=3

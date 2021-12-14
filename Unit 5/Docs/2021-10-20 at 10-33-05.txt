@@ -1,0 +1,18 @@
+H:\Comp Sci 1\Unit 5\PersonRunner.java
+
+public class PersonRunner {
+    public static void main(String args[]){
+        
+        Person defaultPerson = new Person();
+        
+       // defaultPerson.printPerson();
+        
+        
+        Person jim = new Person("Jim", 18, 100.5, 5.6);
+        
+        jim.printPerson();
+        
+        
+        
+    }
+}

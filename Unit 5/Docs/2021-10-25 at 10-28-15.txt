@@ -1,0 +1,71 @@
+H:\Comp Sci 1\Unit 5\States.java
+
+    public class States {
+        private String name; // The state's name
+        private String bird; // The state's bird
+        private String flower; // The state's flower
+        private String song; // The state's song
+        private String motto; // The state's motto
+        private String tree; // The state's tree   
+        
+    public States(){
+        name = "";
+        bird = "";
+        flower = "";
+        song = "";
+        motto = "";
+        tree = "";
+    }
+    
+    public States(String name, String bird, String flower, String song,
+                  String motto, String tree){
+        this.name = name;
+        this.bird = bird;
+        this.flower = flower;
+        this.song = song;
+        this.motto = motto;
+        this.tree = tree;
+    }
+    
+    public String toString(){
+        return  "State Name : " + name + "\n" +
+                "State Bird : " + bird + "\n" +
+                "State Flower : " + flower + "\n" +
+                "State Song : " + song + "\n" +
+                "State Motto : " + motto + "\n" +
+                "State Tree : " + tree;
+    }
+    
+    
+    
+}
+H:\Comp Sci 1\Unit 5\UnitedStates.java
+
+public class UnitedStates{
+    public static void main(String args[]){
+        
+        States blankState = new States();
+        States Texas = new States("Texas", "mockingbird", "bluebonnet","Texas, Our Texas",
+                                    "friendship","pecan");
+        States Oklahoma = new States("Oklahoma", "scissor-tailed flycatcher", "Okalahoma Rose",
+                                     "Oklahoma", "labor omnia vincit (labor conquers all things)",
+                                     "redbud");
+        System.out.println("****************************");
+        System.out.println(" Test Default Constructor");
+        System.out.println("****************************");
+        System.out.println(blankState); // call toString method
+        System.out.println();
+        System.out.println("****************************");
+        System.out.println(" Test 2nd Constructor");
+        System.out.println("****************************");
+        System.out.println(Texas); // call toString method
+        System.out.println();
+        System.out.println("****************************");
+        System.out.println(" Test 2nd Constructor");
+        System.out.println("****************************");
+        System.out.println(Oklahoma); // call toString method
+        System.out.println();
+                
+        
+    }
+}

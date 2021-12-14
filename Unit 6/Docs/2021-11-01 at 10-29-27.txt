@@ -1,0 +1,85 @@
+H:\Comp Sci 1\Unit 6\Turtle.java
+
+public class Turtle extends Animal{
+    
+    private String shellColor;
+    
+    public Turtle(){
+    
+    }
+    public Turtle(int weight, boolean canBreathe, String species, String shellColor){
+        super(weight, canBreathe, species); // this calls the superclass constructor
+        this.shellColor = shellColor;
+    }
+    
+    
+    
+    
+    
+}
+H:\Comp Sci 1\Unit 6\Animal.java
+
+public class Animal {
+    
+    private int weight;
+    private boolean canBreathe;
+    private String species;
+    
+    public Animal(){
+    
+    }
+    
+    public Animal(int weight, boolean canBreathe, String species){
+        this.weight = weight;
+        this.canBreathe = canBreathe;
+        this.species = species;
+    }
+    
+    
+    public String toString(){
+        return "Weight: " + weight +
+                "\nBreathe: " + canBreathe +
+                "\nSpecies: " + species;
+    }
+    
+    
+}
+H:\Comp Sci 1\Unit 6\AnimalRunner.java
+
+public class AnimalRunner {
+    public static void main(String arg[]){
+        
+        /* Inheritance is a concept that allows classes to share features
+         * 
+         * Occurs between a super(parent) and sub class(child). Subclass will "inherit" instance vars
+         * and methods from superclass.
+         * 
+         * Shows an "is a" relationship between two classes. 
+         * 
+         * Examples:
+         * 1. a dog is an Animal
+         * 2. a ham and cheese sandwich is a Sandwich
+         * 3. a tomato is a Fruit
+         * 4. a car is a Vehicle
+         * 5. a backpack is a Bag
+         * 
+         * 
+         */
+        
+        
+        
+        Animal animal = new Animal(72, true, "a large cat");
+        System.out.println(animal);
+        
+        System.out.println();
+        
+        Turtle turty = new Turtle(10, true, "Turtle", "greenish?");
+        System.out.println(turty);
+        
+        
+        
+        
+        
+        
+    }
+}

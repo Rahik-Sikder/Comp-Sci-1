@@ -1,0 +1,9 @@
+#BlueJ class context
+comment0.target=Watch
+comment1.params=gc\ time
+comment1.target=Watch(javafx.scene.canvas.GraphicsContext,\ int)
+comment2.params=time
+comment2.target=void\ timeSet(int)
+comment3.params=
+comment3.target=void\ drawStraps()
+numComments=4

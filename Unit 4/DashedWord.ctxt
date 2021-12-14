@@ -1,0 +1,9 @@
+#BlueJ class context
+comment0.target=DashedWord
+comment1.params=args
+comment1.target=void\ main(java.lang.String[])
+comment2.params=word
+comment2.target=void\ dashVoid(java.lang.String)
+comment3.params=word
+comment3.target=java.lang.String\ dashReturn(java.lang.String)
+numComments=4

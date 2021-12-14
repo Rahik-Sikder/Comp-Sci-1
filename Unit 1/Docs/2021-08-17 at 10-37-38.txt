@@ -1,0 +1,7 @@
+C:\Users\sr10081753\Desktop\Comp Sci 1\Unit 1\VariablesExample.java
+
+public class VariablesExample {
+    public static void main(String[] s){
+        
+    }
+}

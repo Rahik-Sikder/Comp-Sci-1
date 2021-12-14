@@ -1,0 +1,22 @@
+H:\Comp Sci 1\Unit 3\ElseIf.java
+
+import java.util.Scanner;
+
+public class ElseIf {
+    public static void main(String args[]){
+        
+        Scanner reader = new Scanner(System.in);
+        
+        // Else if is used to create multiple options in our code
+        
+        System.out.print("Enter the temp: ");
+        int temp = reader.nextInt();
+        
+        /* 90+      Eat ice cream while swimming
+         * 75-89    Play football or something
+         * 65-74    Frisbee 
+         * 55-64    B-ball w/  the boyz
+         */
+        
+    }
+}

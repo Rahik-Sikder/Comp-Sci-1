@@ -1,0 +1,30 @@
+C:\Users\sr10081753\Desktop\Comp Sci 1\Unit 1\Conversion.java
+
+public class Conversion {
+    public static void main(String args[]){
+    
+        // Declaring and initializing the variables
+        
+        double inch = 2.54;
+        double yard = 0.9144;
+        double mile = 1.609;
+        double centimeter = 0.3937;
+        double meter = 1.094;
+        double kilometer = 0.6214;
+        double lightYear = 9.464; // need to make this to the 12th power
+                                 
+        // Printing out the variables
+        
+        System.out.println(6000000*6000000);
+        System.out.println( );
+        System.out.println("1 inch = " + inch + "centimeters");
+        System.out.println( );
+        System.out.println( );
+        System.out.println( );
+        System.out.println( );
+        System.out.println( );
+        System.out.println( );
+    
+    }
+
+}

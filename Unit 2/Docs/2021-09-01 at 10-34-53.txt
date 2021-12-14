@@ -1,0 +1,25 @@
+H:\Comp Sci 1\Unit 2\SeventhGradeMathMethods.java
+
+public class SeventhGradeMathMethods {
+     public static void main (String args[]){
+     
+     // Math.sqrt(a)
+     // Returns the square root of a
+     // input: double
+     // output: double
+     
+     int a = 70;
+     
+     System.out.println("The sqrt of 70 is: " + Math.sqrt(a));
+         
+        
+     
+     // Math.abs(a)
+     // Returns the absolute value of a
+     // input: double, float, int, long
+     // output: double, float, int, long
+     // OVERLOADED
+     
+     
+     }
+}

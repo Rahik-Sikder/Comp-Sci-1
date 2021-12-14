@@ -1,0 +1,7 @@
+H:\Comp Sci 1\Unit 3\Triangle.java
+
+public class Triangle {
+    public static void main (String args[]){
+    
+    }
+}

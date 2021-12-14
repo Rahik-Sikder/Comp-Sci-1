@@ -1,0 +1,8 @@
+#BlueJ class context
+comment0.target=Dot
+comment1.params=gc\ x\ y
+comment1.target=Dot(javafx.scene.canvas.GraphicsContext,\ int,\ int)
+comment2.params=gc
+comment2.target=void\ drawDot(javafx.scene.canvas.GraphicsContext)
+comment2.text=\ drawDot()\r\n\ @param\ GraphicsContext\ object\r\n\ @param\ int\ x\r\n\ @param\ int\ y\r\n\ This\ methods\ draws\ a\ "dot".\ You\ can\ do\ this\ by\ drawing\ a\ line\ from\ (x,y)\ to\ (x,y)\r\n
+numComments=3

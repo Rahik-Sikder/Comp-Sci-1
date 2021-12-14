@@ -1,0 +1,31 @@
+H:\Comp Sci 1\Unit 5\Init.java
+
+public class Init{
+    // this class will demonstrate how instance and local variable are initialized. 
+    
+    private int num;
+    
+    public void printVars(){
+        System.out.println("num: " + num);
+    }
+    
+    
+    
+    
+}
+H:\Comp Sci 1\Unit 5\InitRunner.java
+
+public class InitRunner{
+    public static void main(String args[]){
+    
+        Init init = new Init();
+        
+        init.printVars();
+        
+        
+    
+    }
+    
+    
+    
+}

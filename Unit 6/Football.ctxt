@@ -1,0 +1,13 @@
+#BlueJ class context
+comment0.target=Football
+comment1.params=name
+comment1.target=Football(java.lang.String)
+comment2.params=name\ gamesPlayed\ gamesWon\ gamesLost\ t\ f
+comment2.target=Football(java.lang.String,\ int,\ int,\ int,\ int,\ int)
+comment3.params=
+comment3.target=double\ getTouchDownsPerGame()
+comment4.params=
+comment4.target=double\ getInterceptionsPerGame()
+comment5.params=
+comment5.target=java.lang.String\ toString()
+numComments=6

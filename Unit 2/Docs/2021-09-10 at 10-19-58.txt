@@ -1,0 +1,97 @@
+H:\Comp Sci 1\Unit 2\Unit2MajorLab.java
+
+    
+    
+    import javafx.application.Application;
+    import javafx.scene.Group;
+    import javafx.scene.Scene;
+    import javafx.scene.canvas.Canvas;
+    import javafx.scene.canvas.GraphicsContext;
+    import javafx.scene.paint.Color;
+    import javafx.scene.shape.ArcType;
+    import javafx.stage.Stage;
+    
+    
+public class Unit2MajorLab extends Application{
+
+    public static void main(String[] args) {
+        launch(args);
+    }
+ 
+    @Override //DONT MAKE ANY CHANGES HERE
+    public void start(Stage primaryStage) {
+        primaryStage.setTitle("Drawing Operations Test");
+        Group root = new Group();
+        Canvas canvas = new Canvas(1500, 1000);
+        GraphicsContext gc = canvas.getGraphicsContext2D();
+        drawShapes(gc);
+        root.getChildren().add(canvas);
+        primaryStage.setScene(new Scene(root));
+        primaryStage.show();
+    }
+    
+    //Write all changes to code in this method.
+    public void drawShapes(GraphicsContext gc){
+        
+        // section it off
+        
+        gc.strokeLine(750, 0, 750, 1000);
+        gc.strokeLine(0, 500, 1500, 500);
+        
+        
+        // The cube
+        
+        gc.strokeRect(50,50, 300, 300);
+        gc.strokeRect(100,100, 300, 300);
+        
+        gc.strokeLine(50,50,100,100);
+        gc.strokeLine(350,50,400,100);
+        gc.strokeLine(50, 350, 100, 400);
+        gc.strokeLine(350, 350, 400, 400);
+        
+        
+        // sphere
+        
+        final int OVAL_Y = 100;
+        final int OVAL_X = 850;
+        final int OVAL_SIZE = 300;
+        int ovalY = 100;
+        int ovalHeight = 300;
+        int ovalX = 850;
+        int ovalWidth = 300;
+        
+        
+            // main circle
+        gc.strokeOval(OVAL_X, OVAL_Y, OVAL_SIZE, OVAL_SIZE);
+        
+        
+            // first ring
+        ovalY += 38;
+        ovalHeight -= 76;
+        ovalX += 38;
+        ovalWidth -= 76;
+        gc.strokeOval(OVAL_X, ovalY, OVAL_SIZE, ovalHeight);
+        gc.strokeOval(ovalX, OVAL_Y, ovalWidth, OVAL_SIZE);
+        
+            // second ring            
+        ovalY += 38;
+        ovalHeight -= 76;
+        ovalX += 38;
+        ovalWidth -= 76;
+        gc.strokeOval(OVAL_X, ovalY, OVAL_SIZE, ovalHeight);
+        gc.strokeOval(ovalX, OVAL_Y, ovalWidth, OVAL_SIZE);
+        
+            // thrid ring
+        ovalY += 38;
+        ovalHeight -= 76;
+        ovalX += 38;
+        ovalWidth -= 76;
+        gc.strokeOval(OVAL_X, ovalY, OVAL_SIZE, ovalHeight);
+        gc.strokeOval(ovalX, OVAL_Y, ovalWidth, OVAL_SIZE);
+        
+        
+        
+        
+        
+    }
+}

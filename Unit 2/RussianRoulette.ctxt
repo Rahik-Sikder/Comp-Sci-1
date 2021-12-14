@@ -1,0 +1,9 @@
+#BlueJ class context
+comment0.target=RussianRoulette
+comment1.params=args
+comment1.target=void\ main(java.lang.String[])
+comment2.params=reader\ bulletsInChamber
+comment2.target=void\ runGame(java.util.Scanner,\ int)
+comment3.params=
+comment3.target=java.lang.String\ safeVoiceLine()
+numComments=4

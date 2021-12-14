@@ -1,0 +1,7 @@
+#BlueJ class context
+comment0.target=MovingBall1
+comment1.params=stage
+comment1.target=void\ start(javafx.stage.Stage)
+comment2.params=gc\ canvas
+comment2.target=void\ run(javafx.scene.canvas.GraphicsContext,\ javafx.scene.canvas.Canvas)
+numComments=3

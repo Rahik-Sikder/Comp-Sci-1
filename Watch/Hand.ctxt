@@ -1,0 +1,7 @@
+#BlueJ class context
+comment0.target=Hand
+comment1.params=gc\ time\ t\ color\ width
+comment1.target=Hand(javafx.scene.canvas.GraphicsContext,\ int,\ Time,\ javafx.scene.paint.Color,\ int)
+comment2.params=gc\ time\ t\ color\ width
+comment2.target=void\ drawHand(javafx.scene.canvas.GraphicsContext,\ int,\ Time,\ javafx.scene.paint.Color,\ int)
+numComments=3

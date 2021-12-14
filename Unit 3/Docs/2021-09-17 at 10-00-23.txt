@@ -1,0 +1,7 @@
+H:\Comp Sci 1\Unit 3\NumberCompare.java
+
+public class NumberCompare{
+    public static void main (String args[]){
+    
+    }
+}

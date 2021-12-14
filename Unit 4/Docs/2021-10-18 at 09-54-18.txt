@@ -1,0 +1,13 @@
+H:\Comp Sci 1\Unit 4\Dice.java
+
+public class Dice
+{
+	public void printRolls()
+	{
+		// use the method rollDie 3 times in your implementation
+	}
+
+	// write the method rollDie
+
+
+}

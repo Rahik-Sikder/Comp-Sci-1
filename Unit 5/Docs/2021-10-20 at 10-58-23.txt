@@ -1,0 +1,43 @@
+H:\Comp Sci 1\Unit 5\Dog.java
+
+public class Dog {
+    // Accessor and mutator methods allow other classes to view and change instance variables.
+     
+    private String name;
+    private String breed;
+    private double age;
+    private int numLegs;
+    // private boolean isWrigslie; // HATE
+    
+    public Dog(){
+        name = "";
+        breed = "";
+    }
+    
+    public Dog(String name, String breed, double age, int numLegs){
+        this.name = name;
+        this.breed = breed;
+        this.age = age;
+        this.numLegs = numLegs;
+    }
+    
+    // Accessor methods - these allows other classes to view instance variables
+    // called "getters"
+    
+    public String getName(){
+        return name;
+    }
+    
+    public String getBreed(){
+        return breed;
+    }
+    
+    public double getAge(){
+        return age;
+    }
+    
+    public int getNumLegs(){
+        return numLegs;
+    }
+    
+}

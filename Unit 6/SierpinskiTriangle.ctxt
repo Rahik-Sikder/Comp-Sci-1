@@ -1,0 +1,8 @@
+#BlueJ class context
+comment0.target=SierpinskiTriangle
+comment1.params=gc
+comment1.target=SierpinskiTriangle(javafx.scene.canvas.GraphicsContext)
+comment2.params=
+comment2.target=void\ drawTriangle()
+comment2.text=\ drawTriangle();\r\n\ This\ method\ picks\ a\ random\ corner\ of\ the\ triangle\ and\ draws\ a\ new\ point\ halfway\r\n\ between\ the\ current\ point\ and\ the\ chosen\ corner.\ Each\ time\ this\ method\ is\ called\ \r\n\ a\ new\ dot\ object\ is\ made.\ \r\n
+numComments=3
